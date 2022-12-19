@@ -50,6 +50,10 @@ public class AnalizadorPalabras
       {
          if (palabra.charAt(i) == palabra.charAt(i + 1)) 
          {
+             if(i==0)
+                 c++;
+             else 
+                 
             if (palabra.charAt(i - 1) != palabra.charAt(i)) 
                c++;
          }
