@@ -26,9 +26,11 @@ public class AnalizadorPalabras
    {
       for (int i = 0; i < palabra.length(); i++)
       {
+          if(!((i+1)==palabra.length())){
          char ch = palabra.charAt(i);
          if (ch == palabra.charAt(i + 1))
             return ch;
+      }
       }
       return 0;
    }
@@ -54,6 +56,7 @@ public class AnalizadorPalabras
                  c++;
              else 
                  
+                         
             if (palabra.charAt(i - 1) != palabra.charAt(i)) 
                c++;
          }
